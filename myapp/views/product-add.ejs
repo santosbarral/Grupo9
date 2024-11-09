@@ -3,61 +3,65 @@
 <!-- Include Head -->
 <%- include('./partials/head') %>
 
-<body>
-	<!-- Header -->
-	<%- include('./partials/header') %>
-	<!-- /Header -->
+	<body>
+		<!-- Header -->
+		<%- include('./partials/header') %>
+			<!-- /Header -->
 
-	<!-- Novedades -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Agregar productos</h2>
-			</div>
-			<!-- Show the "ultimos" products -->
-			<main class="container main-container">
-
-          
-				<!-- Formulario de Registro -->
-	
-				<form class="form" action="/product/register" method="POST">
-				  <div class="title">Agregar Producto</div>
-				  <div class="Hayqbuscarlo">
-					<input id="title" class="input" type="text" name="title" placeholder="Nombre" />
-				  </div>
-				  <div class="Hayqbuscarlo">
-					<input id="rating" class="input" type="number" name="rating" placeholder="Rating" min="0" max="10"/>
-				  </div>
-				  <div class="Hayqbuscarlo">
-					<input id="lastname" class="input" type="number" name="awards" placeholder="Premios" min="0" max="100" />
-				  </div>
-				  <div class="Hayqbuscarlo">
-					  <input id="duracion" class="input" type="number" name="length" placeholder="Duración en Min" min="10" max="250" />
-				  </div>
-				  <div class="Hayqbuscarlo">
-					<input id="release_date" class="input" type="date" name="release_date" placeholder="Lanzamiento" />
-				</div>
-					<div class="Hayqbuscarlo">
-					  <select class="seleccion" name="genre_id" id="genero">
-						  <option value="1" selected>Comedia</option>
-						  <option value="2">Terror</option>
-						  <option value="3">Drama</option>
-						  <option value="4">Accion</option>
-					  </select>
+			<!-- Novedades -->
+			<div class="container products-wrapper">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="products-title">Agregar productos</h2>
 					</div>
-				  <button type="text" class="submit">Guardar</button>
-	  
-	  
-				</form>
-				
-	
-		  
-		</main>
+					<!-- Show the "ultimos" products -->
+					<main class="container main-container">
 
 
-	<!-- footer -->
-	<%- include('./partials/footer') %>
-	<!-- /footer -->
-</body>
+						<!-- Formulario de Registro -->
+
+						<form class="form" action="/product/register" method="POST">
+							<div class="title">Agregar Producto</div>
+							<div class="Hayqbuscarlo">
+								<input id="title" class="input" type="text" name="title" placeholder="Nombre" />
+							</div>
+							<div class="Hayqbuscarlo">
+								<input id="rating" class="input" type="number" name="rating" placeholder="Rating"
+									min="0" max="10" />
+							</div>
+							<div class="Hayqbuscarlo">
+								<input id="lastname" class="input" type="number" name="awards" placeholder="Premios"
+									min="0" max="100" />
+							</div>
+							<div class="Hayqbuscarlo">
+								<input id="duracion" class="input" type="number" name="length"
+									placeholder="Duración en Min" min="10" max="250" />
+							</div>
+							<div class="Hayqbuscarlo">
+								<input id="release_date" class="input" type="date" name="release_date"
+									placeholder="Lanzamiento" />
+							</div>
+							<div class="Hayqbuscarlo">
+								<select class="seleccion" name="genre_id" id="genero">
+									<option value="1" selected>Comedia</option>
+									<option value="2">Terror</option>
+									<option value="3">Drama</option>
+									<option value="4">Accion</option>
+								</select>
+							</div>
+							<button type="text" class="submit">Guardar</button>
+
+
+						</form>
+
+
+
+					</main>
+
+
+					<!-- footer -->
+					<%- include('./partials/footer') %>
+						<!-- /footer -->
+	</body>
 
 </html>

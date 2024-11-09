@@ -1,3 +1,6 @@
+const db = require('../database/models');
+
+
 const productController = {
     product:(req, res)=>{
         return res.render("product")

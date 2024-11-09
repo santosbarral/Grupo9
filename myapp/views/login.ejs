@@ -2,40 +2,46 @@
 <html lang="es">
 <!-- Include Head -->
 <%- include('./partials/head') %>
-<body>
-	<!-- Header -->
-	<%- include('./partials/header') %>
-	<!-- /Header -->
 
-	<!-- Novedades -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Ingresar</h2>
-			</div>
+	<body>
+		<!-- Header -->
+		<%- include('./partials/header') %>
+			<!-- /Header -->
 
-			<main class="container main-container">
+			<!-- Novedades -->
+			<div class="container products-wrapper">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="products-title">Ingresar</h2>
+					</div>
 
-				<!-- Formulario de Registro -->
-		  
-				<form class="form" action="/users/login" method="POST" >
-				  <div class="input-container ic1">
-					  <input id="email" class="form-input" type="email" name="email" placeholder="E-mail" />
-				  </div>
-				  <hr>
-				  <hr>
-				  <div class="input-container ic1">
-					  <input id="password" class="form-input" type="password" name="password" placeholder="Clave" />
-				  </div>
-				  <hr>
-				  <hr>
-				  <button type="text" class="submit">Ingresar</button>
-				</form>
-			  </main>
+					<main class="container main-container">
 
-	<!-- footer -->
-	<%- include('./partials/footer') %>
-	<!-- /footer -->
-</body>
+						<!-- Formulario de Registro -->
+
+						<form class="form" action="/users/login" method="POST">
+							<div class="input-container ic1">
+								<input id="email" class="form-input" type="email" name="email" placeholder="E-mail" required/>
+							</div>
+							<hr>
+							<hr>
+							<div class="input-container ic1">
+								<input id="password" class="form-input" type="password" name="password" placeholder="Clave" required/>
+							</div>
+							<hr>
+							<hr>
+							<input type="checkbox" name="recordarme" id="recordarme(?)"><label class="form-label "
+								for="recordarme">recordarme</label>
+							<hr>
+							<hr>
+							<button type="text" class="submit">Ingresar</button>
+						</form>
+
+					</main>
+
+					<!-- footer -->
+					<%- include('./partials/footer') %>
+						<!-- /footer -->
+	</body>
 
 </html>
