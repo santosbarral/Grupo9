@@ -1,4 +1,3 @@
-const { BelongsTo } = require("sequelize");
 
 const function1 = function (sequelize, datatype) {
 
@@ -11,8 +10,6 @@ const function1 = function (sequelize, datatype) {
             type: datatype.INTEGER
         },
 
-
-
     }
 
     let config = {
@@ -21,7 +18,10 @@ const function1 = function (sequelize, datatype) {
         underscored: true
     }
 
+    let Product = sequelize.define(alias, cols, config);
+
+    return Product;
         //Faltan los associates
 }
 
-module.exports = function1;
+module.exports = function1; 
