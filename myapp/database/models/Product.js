@@ -9,12 +9,32 @@ const function1 = function (sequelize, datatype) {
             primaryKey: true,
             type: datatype.INTEGER
         },
+        productImg:{
+            type: datatype.STRING
+        },
+        productName:{
+            type: datatype.STRING
+        },
+        productDescription:{
+            type: datatype.STRING
+        },
+        createdAt : {
+            type : datatype.DATE,
+            notNull: true
+        },
+        updatedAt : {
+            type : datatype.DATE,
+            notNull: true
+        },
+        deletedAt : {
+            type : datatype.DATE
+        },
 
     }
 
     let config = {
         tablename: "products",
-        timestamps: false,
+        timestamps: true,
         underscored: false
     }
 
