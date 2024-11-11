@@ -2,7 +2,7 @@ const config = {
   "development": {
     "username": "root",
     "password": "root",
-    "database": "movies_db",
+    "database": "Basededatosgrupo9",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

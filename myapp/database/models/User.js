@@ -20,11 +20,20 @@ module.exports =  function(sequelize, dataTypes) {
         remember_token : {
             type : dataTypes.STRING
         },
+        createdAt : {
+            type : dataTypes.DATE
+        },
+        updatedAt : {
+            type : dataTypes.DATE
+        },
+        deletedAt : {
+            type : dataTypes.DATE
+        },
     };
 
     let config = {
         tableName : "users",
-        timestamps : false,
+        timestamps : true,
         underscored : true
     }
 
