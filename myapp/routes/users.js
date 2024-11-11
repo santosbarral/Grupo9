@@ -11,10 +11,10 @@ router.get('/register', userController.register)
 
 router.get('/login', userController.login)
 
-//router.post('/register', userController.registerPost)
+router.post('/register', userController.registerPost)
 
-//router.post('/login' , userController.loginPost)
+router.post('/login' , userController.loginPost)
 
-//router.post('/logout' , userController.logout)
+router.post('/logout' , userController.logout)
 
 module.exports = router;
