@@ -15,7 +15,7 @@ const function1 = function (sequelize, datatype) {
     let config = {
         tablename: "products",
         timestamps: false,
-        underscored: true
+        underscored: false
     }
 
     let Product = sequelize.define(alias, cols, config);

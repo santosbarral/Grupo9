@@ -21,10 +21,12 @@ module.exports =  function(sequelize, dataTypes) {
             type : dataTypes.STRING
         },
         createdAt : {
-            type : dataTypes.DATE
+            type : dataTypes.DATE,
+            notNull: true
         },
         updatedAt : {
-            type : dataTypes.DATE
+            type : dataTypes.DATE,
+            notNull: true
         },
         deletedAt : {
             type : dataTypes.DATE
@@ -34,7 +36,7 @@ module.exports =  function(sequelize, dataTypes) {
     let config = {
         tableName : "users",
         timestamps : true,
-        underscored : true
+        underscored : false
     }
 
     let User = sequelize.define(alias, cols, config);
