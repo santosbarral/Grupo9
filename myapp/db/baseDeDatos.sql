@@ -1,10 +1,12 @@
 /* Llenar con la base de datos de sql*/
+CREATE SCHEMA Basededatosgrupo9;
+
 USE Basededatosgrupo9;
 
 CREATE TABLE users(
-id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT UNIQUE,
 name VARCHAR(250) NOT NULL,
-email VARCHAR(250) NOT NULL,
+email VARCHAR(250) NOT NULL UNIQUE,
 password VARCHAR(250) NOT NULL,
 remember_token varchar(100),
 

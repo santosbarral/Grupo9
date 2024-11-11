@@ -10,15 +10,18 @@ const userController = {
     },
     registerPost: (req, res)=>{
         let form = req.body;
-        form.password = bycryptjs.hashSync(form.password, 10);
 
-        db.User.create(form)
-        .then((results) =>{
+        if (form.email == "") {
+            return res.send('Completar email')
+
+            
+        }else if (form.password == "") {
+            return res.send('Completar la contraseña')
+        } else if (form.name =="") {
+            return res.send('Completar el usuario')
+        } else {
             return res.redirect('/users/login');
-        })
-        .catch((err) => {
-            return console.log(err);
-        })
+        }
     },
     loginPost: (req, res)=>{
         let form = req.body;
