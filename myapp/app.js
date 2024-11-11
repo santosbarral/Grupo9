@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Requiero el express-session
+const session = require('express-session')
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productRouter = require('./routes/product');
@@ -20,6 +23,22 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Implementar session
+app.use(session({
+  secret: 'myapp',
+  resave: false,
+  saveUninitialized: true
+}))
+
+// Hacemos un pasa manos de la info --> de SESSION se la enviamos a LOCALS
+app.use( (req, res, next) =>{
+  // El 'user' de req.session.user sale de lo puesto en el userController, se debe respetar el valor, pero se puede poner cualquiera
+  if (req.session.user != undefined) {
+    res.locals.user = req.session.user
+  }
+  return next();
+})
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
