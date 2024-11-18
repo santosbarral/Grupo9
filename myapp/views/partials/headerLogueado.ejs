@@ -33,20 +33,14 @@
     <ul class="left-navbar">
       <li><a href="/">Todos los productos</a></li>
       <li><a href="/product/add">Agregar producto</a></li> 
-      <li><a href="/profile">Mi perfil</a></li> 
     </ul>
 
     <h2>Hola, <%=locals.user.name%> </h2> 
 
     <ul class="right-navbar">
       
-    
-      <li> 
-        Nombre del usuario <i class="fas fa-user"> <%=locals.user.name%></i>
-      </li>
-
-      
-
+		<a href="/profile">Mi Perfil  <i class="fas fa-user"></i></a>
+		
       <li>
         <form action="/users/logout" method="post">
           <button class="logout" type="submit">

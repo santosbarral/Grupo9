@@ -22,6 +22,26 @@
 					<div class="col-12">
 						<h2 class="products-title">Productos</h2>
 					</div>
+
+					<!-- Show the "ultimos" products -->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<section class="product-box">
+							<% for( let i=0; i < listaProductos.length; i++ ) { %>
+							<a href="/product/id/<%= listaProductos[i].id %> ">
+								<figure class="product-box_image">
+									<img src="images/products/<%= listaProductos[i].productImg %> " alt="img-macbook-pro-2019">
+								</figure>
+								<article class="product-box_data">
+									<h2><%= listaProductos[i].productName %> </h2>
+									<p><%= listaProductos[i].productDescription %></p>
+									<p>Comentarios: 12</p>
+								</article>
+							</a>
+							<% } %>
+						</section>
+					</div>
+
+
 					<!-- Show the "ultimos" products -->
 					<div class="col-12 col-sm-6 col-lg-3">
 						<section class="product-box">
@@ -38,56 +58,6 @@
 							</a>
 						</section>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-3">
-						<section class="product-box">
-							<a href="/product">
-								<figure class="product-box_image">
-									<img src="images/products/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
-								</figure>
-								<article class="product-box_data">
-									<h2>Samsung Galaxy S10</h2>
-									<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur,
-										adipisicing elit. Eaque
-										delectus ex</p>
-									<p>Comentarios: 12</p>
-								</article>
-							</a>
-						</section>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-3">
-						<section class="product-box">
-							<a href="/product">
-								<figure class="product-box_image">
-									<img src="images/products/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
-								</figure>
-								<article class="product-box_data">
-									<h2>TV Samsung Smart</h2>
-									<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur,
-										adipisicing elit. Eaque
-										delectus ex</p>
-									<p>Comentarios: 12</p>
-								</article>
-							</a>
-						</section>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-3">
-						<section class="product-box">
-							<a href="/product">
-								<figure class="product-box_image">
-									<img src="images/products/img-cafetera-moulinex.jpg" alt="cafetera moulinex">
-								</figure>
-								<article class="product-box_data">
-									<h2>Cafetera Moulinex</h2>
-									<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur,
-										adipisicing elit. Eaque
-										delectus ex</p>
-									<p>Comentarios: 12</p>
-								</article>
-							</a>
-						</section>
-					</div>
-				</div>
-			</div>
 
 
 			<!-- footer -->
