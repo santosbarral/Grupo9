@@ -33,7 +33,24 @@ const productController = {
       .catch(function (error) {
         return console.log(error)
       })    
+    },
+    search:(req, res)=>{
+      let qs = req.query.search;
+    let filtrado= {
+      where: [{productName: {[op.like]: `%${qs}%`}}],
+      order: [["createdAt", "DESC"]],
+
     }
+    db.Product.findAll(filtrado)
+    .then(function (results) {
+      return res.render("search-results", {productos: results});
+    })
+    .catch(function (error) {
+      return console.log(error)
+    })
+    }
+
+
 }
     
 module.exports = productController

@@ -11,4 +11,6 @@ router.get("/add", productController.showFormAdd);
 
 router.post("/add", productController.store);
 
+router.get("/busqueda", productController.search);
+
 module.exports = router;
