@@ -5,8 +5,17 @@ const op = db.Sequelize.Op;
 
 const productController = {
     product:(req, res)=>{
-        return res.render("product")
-    },
+        
+        db.Product.findAll(filtrado)
+        .then((result) =>{
+          return res.render("index", {listaProductos: result});
+        })
+        .catch((err) =>{
+          return console.log(err);
+        }) 
+        
+      },
+    
     detalle: (req, res)=>{
       let id = req.params.idProduct; //Del sistema de routeo :idProducto
 
@@ -25,15 +34,19 @@ const productController = {
     },
     store:(req, res)=>{
       let product= req.body
-      
+   
       db.Product.create(product)
       .then(function (results) {
-        return res.redirect('/index');
+        
+        return res.redirect('/');
       })
       .catch(function (error) {
         return console.log(error)
       })    
     },
+
+    
+
     search:(req, res)=>{
       let qs = req.query.search;
     let filtrado= {

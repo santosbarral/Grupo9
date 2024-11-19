@@ -29,7 +29,7 @@
 							<% for( let i=0; i < listaProductos.length; i++ ) { %>
 							<a href="/product/id/<%= listaProductos[i].id %> ">
 								<figure class="product-box_image">
-									<img src="images/products/<%= listaProductos[i].productImg %> " alt="img-macbook-pro-2019">
+									<img src="/images/product/<%= listaProductos[i].productImg %> " alt="<%= listaProductos[i].productName %>">
 								</figure>
 								<article class="product-box_data">
 									<h2><%= listaProductos[i].productName %> </h2>

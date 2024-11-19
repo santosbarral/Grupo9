@@ -10,13 +10,16 @@ const function1 = function (sequelize, datatype) {
             type: datatype.INTEGER
         },
         productImg:{
-            type: datatype.STRING
+            type: datatype.STRING,
+          
         },
         productName:{
-            type: datatype.STRING
+            type: datatype.STRING,
+            
         },
         productDescription:{
-            type: datatype.STRING
+            type: datatype.STRING,
+       
         },
         createdAt : {
             type : datatype.DATE,
