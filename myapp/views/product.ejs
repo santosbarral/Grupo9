@@ -23,8 +23,10 @@
 				<div class="product-detail">
 					<div class="row">
 						<article class="col-12 col-lg-8 product-detail-info">
-							<img src="./images/products/<%= product.productImg %>" alt="" class="product-detail-img">
-							<p class="product-detail-description"><%= product.productDescription %>.</p>
+							<img src="/images/products/<%= product.productImg %>" alt="<%= product.productName %>" class="product-detail-img">
+							<hr>
+							<br>
+							<p class="product-detail-description"><%= product.productDescription %></p>
 						</article>
 						<div class="col-12 col-lg-4">
 							<section class="comments">
@@ -32,7 +34,8 @@
 									<img src="https://via.placeholder.com/35" alt="">
 									<div class="data">
 										<p class="user">
-											<strong> <a href="profile.html">Nombre usuario: </a> </strong>
+											<strong> <a href="profile.html">Nombre usuario: <p>
+											</a> </strong>
 											Texto del comentario que escribió el usuario Lorem ipsum dolor sit amet
 											consectetur adipisicing elit. Tempora doloribus enim aspernatur fugit
 											corrupti suscipit sit dolore magnam, praesentium explicabo inventore
