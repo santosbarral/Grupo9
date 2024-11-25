@@ -1,5 +1,5 @@
 
-const fun = (sequelize, datatypes)=>{
+const fun = (sequelize, dataTypes)=>{
 
     let alias = "Product";
 
