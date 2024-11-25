@@ -65,7 +65,11 @@ const userController = {
     logout: (req, res)=>{
         req.session.destroy();
         return res.redirect('/');
-    }
+    },
+
+    profile:(req, res)=>{
+        return res.send("Bienvenido a su Perfil")
+    },
 }
 
 
