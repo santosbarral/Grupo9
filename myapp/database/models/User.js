@@ -38,9 +38,13 @@ const fun = (sequelize, dataTypes)=>{
     }
 
     let User = sequelize.define(alias, cols, config);
-
-
-
+    User.associate =  (models)=> {
+        User.hasMany(models.Product, {
+            as: "product",
+            foreignKey: "userId" 
+        })
+    }
+ 
     return User;
 
 }

@@ -20,7 +20,12 @@ const productController = {
     detalle: (req, res) => {
         let id = req.params.idProduct; // Del sistema de routeo :idProducto
 
-        db.Product.findByPk(id)
+        let filtrado = {
+            include: [
+            {association: "user"}]
+        }
+
+        db.Product.findByPk(id, filtrado)
             .then(function (results) {
                 return res.render('product', { product: results });
             })
@@ -35,7 +40,7 @@ const productController = {
 
     store: (req, res) => {
         let product = req.body;
-
+        
         db.Product.create(product)
             .then(function (results) {
                 return res.redirect('/');
