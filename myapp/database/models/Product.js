@@ -43,6 +43,8 @@ const fun = (sequelize, dataTypes)=>{
 
     let Product = sequelize.define(alias, cols, config);
 
+    return Product;
+
 
 
 }
