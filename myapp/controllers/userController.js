@@ -3,10 +3,18 @@ const bycryptjs = require('bcryptjs');
 
 const userController = {
     register: (req, res)=>{
-        return res.render("register")
+        if (req.session.user != undefined ) {
+            return res.redirect('/')
+        } else{
+            return res.render('register')
+        }
     },
     login: (req, res)=>{
-        return res.render("login")
+        if (req.session.user != undefined ) {
+            return res.redirect('/')
+        } else{
+            return res.render('login')
+        }
     },
     registerPost: (req, res)=>{
         let form = req.body;
@@ -39,14 +47,13 @@ const userController = {
         }
         db.User.findOne(filtro)
         .then((result) => {
-            
             if (!result) {
                 return res.send('El email no se encuentra registrado')
             } else {        
                 let check = bycryptjs.compareSync(form.password , result.password)
                 if (check) {
                     req.session.user = result.dataValues
-                    return res.redirect('/')
+                    return res.redirect('/');
                 } else {
                     return res.send('La contraseña es incorrecta')
                 }

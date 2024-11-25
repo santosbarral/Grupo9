@@ -5,6 +5,7 @@ const op = db.Sequelize.Op;
 const productController = {
     product: (req, res) => {
         let filtrado = {
+
             order: [["id", "DESC"]], 
             limit: null // Si quieres traer todos los registros, usa 'null'
         };
@@ -38,7 +39,11 @@ const productController = {
     },
 
     showFormAdd: (req, res) => {
-        return res.render("product-add");
+        if (req.session.user != undefined ) {
+            return res.render('product-add')
+        } else{
+            return res.redirect('/')
+        }
     },
 
     store: (req, res) => {
