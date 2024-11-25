@@ -25,8 +25,11 @@ const productController = {
             {association: "user"}]
         }
 
+        
+
         db.Product.findByPk(id, filtrado)
             .then(function (results) {
+
                 return res.render('product', { product: results });
             })
             .catch(function (err) {
@@ -40,7 +43,7 @@ const productController = {
 
     store: (req, res) => {
         let product = req.body;
-        
+        product.userId = req.session.user.id
         db.Product.create(product)
             .then(function (results) {
                 return res.redirect('/');

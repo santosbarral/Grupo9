@@ -4,7 +4,7 @@
 
 /*====== Variables ======*/
 :root {
-  --yellow: #EAC926;
+  --yellow: #000000;
   --dark-blue: #03264C;
   --light-blue: #1259c3;
   --gray: #666666;
@@ -43,7 +43,7 @@ ol {
 a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 figure {
@@ -155,7 +155,7 @@ hr {
 
 /*====== Banner ======*/
 .banner {
-  background-image: url(/images/img-home-banner.jpg);
+  background-image: url("https://m.media-amazon.com/images/G/31/img2020/fashion/WA_2020/Gateway/apparelmin50/EOSS-Min50._CB410624090_.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -181,6 +181,7 @@ hr {
   overflow: hidden;
   transition: 300ms;
   margin: 20px 0;
+  color: black;
 }
 
 .product-box a {
@@ -203,6 +204,7 @@ hr {
   font-size: 2.4em;
   font-weight: 300;
   margin: 0;
+  color: black;
 }
 
 .product-box_data span {
