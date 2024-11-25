@@ -492,6 +492,10 @@ textarea.form-input {
 /*====== Agregados ======*/
 
 
+.nombres{
+  color: black;
+}
+
 
 /*====== Media-Queries ======*/
 @media (min-width: 768px) {
