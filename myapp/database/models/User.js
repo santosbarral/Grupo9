@@ -17,9 +17,7 @@ const fun = (sequelize, dataTypes)=>{
         password : {
             type : dataTypes.STRING
         },
-        remember_token : {
-            type : dataTypes.STRING
-        },
+
         createdAt : {
             type : dataTypes.DATE,
             notNull: true

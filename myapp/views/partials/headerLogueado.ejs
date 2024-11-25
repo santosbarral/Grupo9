@@ -36,12 +36,11 @@
 					<li><a href="/product/add">Agregar producto</a></li>
 				</ul>
 
-				<h2>Hola, <%=locals.user.name%>
-				</h2>
+				
 
 				<ul class="right-navbar">
 
-					<a href="/profile">Mi Perfil <i class="fas fa-user"></i></a>
+					<a href="/">Hola, <%=locals.user.name%> <i class="fas fa-user"></i></a>
 
 					<li>
 						<form action="/users/logout" method="post">
