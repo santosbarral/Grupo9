@@ -1,4 +1,4 @@
-module.exports =  function(sequelize, dataTypes) {
+const fun = (sequelize, datatypes)=>{
 
     let alias = "User";
 
@@ -41,6 +41,15 @@ module.exports =  function(sequelize, dataTypes) {
 
     let User = sequelize.define(alias, cols, config);
 
+    User.associate =  (models)=> {
+        User.hasMany(models.Product, {
+            as: "product",
+            foreignKey: "" // No sé que poner como foreignkey, ya se que es la columna que relaciona las 2 tablas (esta en las 2 tablas)
+        })
+    }
+
     return User;
-    
+
 }
+
+module.exports = fun;

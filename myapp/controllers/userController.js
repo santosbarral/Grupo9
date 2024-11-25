@@ -41,7 +41,7 @@ const userController = {
         .then((result) => {
             
             if (!result) {
-                return res.send('El email no se encuantra registrado')
+                return res.send('El email no se encuentra registrado')
             } else {        
                 let check = bycryptjs.compareSync(form.password , result.password)
                 if (check) {

@@ -1,5 +1,5 @@
 
-const function1 = function (sequelize, datatype) {
+const fun = (sequelize, datatypes)=>{
 
     let alias = "Product";
 
@@ -43,8 +43,15 @@ const function1 = function (sequelize, datatype) {
 
     let Product = sequelize.define(alias, cols, config);
 
+    Product.associate = (models)=>{
+        Product.belongsTo(models.User, {
+            as: "user",
+            foreignKey: "", // No sé que poner como foreignkey
+        })
+    }
+
     return Product;
-        //Faltan los associates
+
 }
 
-module.exports = function1; 
+module.exports = fun; 
