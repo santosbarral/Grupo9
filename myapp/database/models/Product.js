@@ -43,14 +43,7 @@ const fun = (sequelize, dataTypes)=>{
 
     let Product = sequelize.define(alias, cols, config);
 
-    Product.associate = (models)=>{
-        Product.belongsTo(models.User, {
-            as: "user",
-            foreignKey: "", // No sé que poner como foreignkey
-        })
-    }
 
-    return Product;
 
 }
 
