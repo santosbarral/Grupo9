@@ -30,7 +30,7 @@ body {
 body {
   font-family: var(--base-font-family);
   font-weight: 300;
-  background-color: var(--light-gray);
+  background-color: #ece6e1;
 }
 
 ul,
@@ -138,6 +138,12 @@ hr {
   border: 0px;
   cursor: pointer;
   font-size: 1em;
+  color: white;
+}
+
+
+.editar{
+  color:#000000;
 }
 
 .logout:hover{
@@ -155,7 +161,7 @@ hr {
 
 /*====== Banner ======*/
 .banner {
-  background-image: url("https://m.media-amazon.com/images/G/31/img2020/fashion/WA_2020/Gateway/apparelmin50/EOSS-Min50._CB410624090_.jpg");
+  background-image: url("https://shaws.ie/cdn/shop/collections/Mango_Coming_Soon_1.jpg?v=1692613962");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -171,8 +177,10 @@ hr {
 
 .products-title {
   font-size: 2.4em;
-  font-weight: 400;
-  color: var(--gray);
+  font-weight: 300;
+  color: white;
+  background-color: #000000;
+  padding-right: 1000px;
 }
 
 .product-box {

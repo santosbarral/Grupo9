@@ -32,12 +32,12 @@ INSERT INTO users VALUES (DEFAULT, 'Agustina', 'agustina@gmail.com', 'hola', DEF
 INSERT INTO users VALUES (DEFAULT, 'Juan', 'juan@gmail.com', 'chau', DEFAULT, DEFAULT, DEFAULT);
 INSERT INTO users VALUES (DEFAULT, 'Luis', 'luis@gmail.com', 'casa', DEFAULT, DEFAULT, DEFAULT);
 
-INSERT INTO products VALUES (DEFAULT, 'https://acdn.mitiendanube.com/stores/001/188/678/products/remera-manga-corta-mujer-con-tajos-en-laterales-remera-olivia-cali-blanca-tienda-online-yage-sportswear-_1-11e74f39732aa78f3716954076639729-480-0.jpg', 'Remera', 'Remera blanca rayada', 1, DEFAULT, DEFAULT, DEFAULT);
+INSERT INTO products VALUES (DEFAULT, 'https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77028267_99.jpg?imwidth=960&imdensity=1&ts=1727267641176', 'TOP', 'Top lúrex hombros descubiertos', 1, DEFAULT, DEFAULT, DEFAULT);
 
-INSERT INTO products VALUES (DEFAULT, 'https://kremiamoda.com/wp-content/uploads/2024/07/Pantalon-de-mujer-24614-2.jpg', 'Pantalon', 'Pantalon cargo gris', 2, DEFAULT, DEFAULT, DEFAULT);
+INSERT INTO products VALUES (DEFAULT, 'https://shop.mango.com/assets/rcs/pics/static/T7/fotos/outfit/S/77010360_01-99999999_01.jpg?imwidth=960&imdensity=1&ts=1723637130379', 'JEANS', 'Jeans Sienna flare crop', 2, DEFAULT, DEFAULT, DEFAULT);
 
-INSERT INTO products VALUES (DEFAULT, 'https://yagmour.vtexassets.com/arquivos/ids/295555/SWEATER-CALADO-PERAL-MARFIL-0800311136-01.jpg?v=638597106038970000', 'Sweater', 'Sweater con agujeros', 3, DEFAULT, DEFAULT, DEFAULT);
+INSERT INTO products VALUES (DEFAULT, 'https://shop.mango.com/assets/rcs/pics/static/T7/fotos/outfit/S/77059407_99-99999999_01.jpg?imwidth=960&imdensity=1&ts=1728302665712', 'VESTIDO', 'Vestido lúrex palabra honor', 3, DEFAULT, DEFAULT, DEFAULT);
 
-INSERT INTO products VALUES (DEFAULT, 'https://acdn.mitiendanube.com/stores/003/962/317/products/23082023-img_7597-a84398e9a30ae2a33417059339869310-1024-1024.jpg', 'Zapatillas', 'Zapatillas negras', 4, DEFAULT, DEFAULT, DEFAULT);
+INSERT INTO products VALUES (DEFAULT, 'https://shop.mango.com/assets/rcs/pics/static/T7/fotos/outfit/S/77019069_05-99999999_01.jpg?imwidth=960&imdensity=1&ts=1729154068807', 'SWEATER', 'Jersey cebra cuello redondo', 4, DEFAULT, DEFAULT, DEFAULT);
 
-INSERT INTO products VALUES (DEFAULT, 'https://www.atributo.co/cdn/shop/files/232.png?crop=center&height=600&v=1693517212&width=480', 'Vestido', 'Vestido azul', 5, DEFAULT, DEFAULT, DEFAULT);
+INSERT INTO products VALUES (DEFAULT, 'https://shop.mango.com/assets/rcs/pics/static/T7/fotos/outfit/S/77083266_50-99999999_01.jpg?imwidth=960&imdensity=1&ts=1721739858538', 'PIJAMA', 'Camisa pijama terminaciones contraste', 5, DEFAULT, DEFAULT, DEFAULT);
