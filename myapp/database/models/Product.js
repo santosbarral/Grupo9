@@ -7,30 +7,30 @@ const fun = (sequelize, datatypes)=>{
         id: {
             autoincrement: true,
             primaryKey: true,
-            type: datatype.INTEGER
+            type: dataTypes.INTEGER
         },
         productImg:{
-            type: datatype.STRING,
+            type: dataTypes.STRING,
           
         },
         productName:{
-            type: datatype.STRING,
+            type: dataTypes.STRING,
             
         },
         productDescription:{
-            type: datatype.STRING,
+            type: dataTypes.STRING,
        
         },
         createdAt : {
-            type : datatype.DATE,
+            type : dataTypes.DATE,
             notNull: true
         },
         updatedAt : {
-            type : datatype.DATE,
+            type : dataTypes.DATE,
             notNull: true
         },
         deletedAt : {
-            type : datatype.DATE
+            type : dataTypes.DATE
         },
 
     }
